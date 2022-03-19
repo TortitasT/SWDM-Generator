@@ -1,0 +1,59 @@
+<!-- Place in document head -->
+<link rel="stylesheet" href="starwarsintro.css">
+
+<!-- Place in Body where you'd like intro to appear -->
+<div class="star-wars-intro" style="text-align: center;">
+
+  <!-- Blue Intro Text -->
+  <p class="intro-text">
+    ...
+  </p>
+
+  <!-- Logo Image or Text goes in here -->
+  <h2 class="main-logo">
+    <span id="ip">192.168.1.1</span>
+  </h2>
+
+  <!-- All Scrolling Content Goes in here -->
+  <div class="main-content">
+
+    <div class="title-content">
+      <!-- <p class="content-header">EPISODES IV-VI<br/>A Movie Marathon</p>
+
+      <br> -->
+
+    <p class="content-body" style="margin-left:50%; width:1000px;">
+        Ip: <span id="ip2">90.164.51.59</span> <br>
+        Country: <span id="country">ES/Spain</span> <br>
+        Region: <span id="region">VC/Valencia</span> <br>
+        City: <span id="city">Benidorm</span> <br>
+        Zip: <span id="zip">03502</span> <br>
+        Latitude: <span id="lat">38.5358</span> <br>
+        Longitude: <span id="lon">-0.1351</span> <br>
+    </p>
+
+      <!-- button or link or whatever -->
+      <!-- <a href="./StarScroll.zip" class="space-button">Download The Code Now!</a> -->
+        
+    </div>
+  </div>
+</div>
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  // IP
+  document.getElementById('ip').textContent = urlParams.get('ip');
+  document.getElementById('ip2').textContent = urlParams.get('ip');
+  document.getElementById('country').textContent = urlParams.get('country');
+  document.getElementById('region').textContent = urlParams.get('region');
+  document.getElementById('city').textContent = urlParams.get('city');
+  document.getElementById('zip').textContent = urlParams.get('zip');
+  document.getElementById('lat').textContent = urlParams.get('lat');
+  document.getElementById('lon').textContent = urlParams.get('lon');
+
+  // Close after 10 seconds
+  setTimeout(function() {
+      window.close()
+  }, 30000);
+</script>
