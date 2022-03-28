@@ -1,7 +1,7 @@
 # SWDM-Generator
 An Star Wars doxxing meme generator made in python
 
-_Note: Doesn't work on Wayland, not tested in Windows either._
+_Note: Doesn't work on Wayland, not tested in Windows nor MacOS either._
 
 ## Usage
 To use this CLI you will need to clone the repo  
